@@ -3,6 +3,8 @@ import json from "koa-json"
 import Router from "koa-router"
 import logger from "koa-logger"
 
+import initRoutes from "./routes";
+
 const app = new Koa();
 const router = new Router()
 
@@ -12,10 +14,7 @@ app.use(logger())
 app.use(json())
 app.use(router.routes())
 
-// response
-router.get("/", (ctx) => {
-  ctx.body = { msg: "Hola Koa!" }
-})
+initRoutes(router)
 
 app.listen(PORT, () => {
   console.log("🚀 ~ Koa started and listening to", PORT)
