@@ -3,7 +3,7 @@ import json from 'koa-json'
 import Router from 'koa-router'
 import logger from 'koa-logger'
 
-import initRoutes from './routes'
+import initRoutes from '~/routes'
 
 const app = new Koa()
 const router = new Router()

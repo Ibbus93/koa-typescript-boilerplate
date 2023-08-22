@@ -1,5 +1,5 @@
 import Router from 'koa-router'
-import createItemsRoutes from './items.routes'
+import createItemsRoutes from '~/routes/items.routes'
 
 const initRoutes = (router: Router) => {
   createItemsRoutes(router)
