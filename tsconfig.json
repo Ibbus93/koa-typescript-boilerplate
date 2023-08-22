@@ -12,13 +12,13 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"],
       "@/*": ["./*"]
     }
   },
-  "include": ["./*"],
+  "include": ["./src/**/*"],
   "exclude": ["./build/."],
   "ts-node": {
     "require": ["tsconfig-paths/register"]
