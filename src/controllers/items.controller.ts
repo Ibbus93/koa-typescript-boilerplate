@@ -1,9 +1,9 @@
 import { Context } from 'koa'
 
-const ItemController = {
+const ItemsController = {
   get: (ctx: Context) => {
     ctx.body = { path: 'item' }
   }
 }
 
-export default ItemController
+export default ItemsController
