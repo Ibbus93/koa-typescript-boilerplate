@@ -2,7 +2,11 @@
 
 ## How to start
 
-If you use `nvm`, before all run `nvm use` to use the right node version.
+If you use `nvm`, in order to use the right node version run:
+
+```bash
+nvm use
+```
 
 After this, install the dependencies with:
 
