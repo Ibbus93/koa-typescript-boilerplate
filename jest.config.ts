@@ -7,7 +7,7 @@ import type { Config } from 'jest'
 
 const config: Config = {
   collectCoverage: true,
-  coverageDirectory: 'coverage',
+  coverageDirectory: '<rootDir>/coverage',
   coveragePathIgnorePatterns: ['/node_modules/'],
   coverageProvider: 'v8',
   moduleNameMapper: {
