@@ -1,9 +1,9 @@
-import { Context } from "koa"
+import { Context } from "koa";
 
 const ItemController = {
   get: (ctx: Context) => {
-    ctx.body = { path: 'item' }
-  }
-}
+    ctx.body = { path: "item" };
+  },
+};
 
-export default ItemController
+export default ItemController;

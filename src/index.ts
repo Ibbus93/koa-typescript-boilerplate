@@ -1,21 +1,21 @@
 import Koa from "koa";
-import json from "koa-json"
-import Router from "koa-router"
-import logger from "koa-logger"
+import json from "koa-json";
+import Router from "koa-router";
+import logger from "koa-logger";
 
 import initRoutes from "./routes";
 
 const app = new Koa();
-const router = new Router()
+const router = new Router();
 
-const PORT = 3300
+const PORT = 3300;
 
-app.use(logger())
-app.use(json())
-app.use(router.routes())
+app.use(logger());
+app.use(json());
+app.use(router.routes()).use(router.allowedMethods());
 
-initRoutes(router)
+initRoutes(router);
 
 app.listen(PORT, () => {
-  console.log("🚀 ~ Koa started and listening to", PORT)
+  console.log("🚀 ~ Koa started and listening to", PORT);
 });
