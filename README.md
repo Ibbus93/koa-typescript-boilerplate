@@ -2,7 +2,7 @@
 
 ## How to start
 
-If you use `nvm`, in order to use the right node version run:
+If you use [nvm](https://github.com/nvm-sh/nvm), in order to use the right node version run:
 
 ```bash
 nvm use
