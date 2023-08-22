@@ -1,25 +1,26 @@
 {
   "compilerOptions": {
-    "target": "es2016",
-    "lib": ["es6"],
-    "module": "CommonJS",
-    "rootDir": ".",
-    "resolveJsonModule": true,
     "allowJs": true,
-    "outDir": "build",
+    "baseUrl": "./src",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "lib": ["es6"],
+    "module": "CommonJS",
     "noImplicitAny": true,
-    "skipLibCheck": true,
-    "baseUrl": "./src",
+    "outDir": "build",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    }
+      "@/*": ["./*"],
+      "~/*": ["./*"]
+    },
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2016",
+    "types": ["@types/jest"]
   },
-  "include": ["./src/**/*"],
   "exclude": ["./build/."],
+  "include": ["./src/**/*"],
   "ts-node": {
     "require": ["tsconfig-paths/register"]
   }

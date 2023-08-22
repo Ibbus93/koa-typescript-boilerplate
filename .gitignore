@@ -55,3 +55,6 @@ build
 
 # VSC directories
 .vscode
+
+# MacOS files
+.DS_Store
