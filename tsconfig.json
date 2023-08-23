@@ -9,8 +9,8 @@
     "noImplicitAny": true,
     "outDir": "build",
     "paths": {
-      "@/*": ["./*"],
-      "~/*": ["./*"]
+      "~/*": ["./*"],
+      "@/*": ["./*"]
     },
     "resolveJsonModule": true,
     "rootDir": ".",
