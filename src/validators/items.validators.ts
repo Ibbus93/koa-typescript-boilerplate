@@ -11,4 +11,4 @@ const schema = Joi.object({
     .error(new Error(MAX_NUMBER_ERROR))
 })
 
-export default createJoiMiddleware(schema)
+export const validateItem = createJoiMiddleware(schema)
