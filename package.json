@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "ts-node src/index.ts",
     "dev": "nodemon src/index.ts",
-    "build": "npx tsc",
+    "build": "tsc",
     "prepare": "husky install"
   },
   "author": "Federico Ibba",
