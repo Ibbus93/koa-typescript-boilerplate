@@ -1,26 +1,26 @@
 import { Context } from 'koa'
-import HTTP_STATUS from 'http-status'
+import HttpStatus from 'http-status'
 import { itemList } from '~/mocks/items.mock'
 
 const ItemsController = {
   get: (ctx: Context) => {
     ctx.body = itemList
-    ctx.status = HTTP_STATUS.OK
+    ctx.status = HttpStatus.OK
   },
   getItem: (ctx: Context) => {
     ctx.body = itemList[0]
-    ctx.status = HTTP_STATUS.OK
+    ctx.status = HttpStatus.OK
   },
   create: (ctx: Context) => {
     ctx.body = ctx.request.body
-    ctx.status = HTTP_STATUS.CREATED
+    ctx.status = HttpStatus.CREATED
   },
   update: (ctx: Context) => {
     ctx.body = ctx.request.body
-    ctx.status = HTTP_STATUS.OK
+    ctx.status = HttpStatus.OK
   },
   delete: (ctx: Context) => {
-    ctx.status = HTTP_STATUS.NO_CONTENT
+    ctx.status = HttpStatus.NO_CONTENT
   }
 }
 
