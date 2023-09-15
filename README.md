@@ -2,7 +2,7 @@
 
 ## Description and Motivations
 
-This project is intended to be a personal boilerplate, but also built for the community. It will help in further personal projects, having a good fork-able project.
+This project is intended to be a personal boilerplate, but also built for the community. It will help in further personal projects, having a good fork-able project.  
 As you will see, there is an example CRUD controller, but no ORM DB library is installed. This is because the project is intended to be the most flexible, allowing the dev to use the
 service as it may like the most.
 
@@ -10,12 +10,12 @@ service as it may like the most.
 
 The boilerplate contains the following technologies:
 
-- Typescript
-- Koa
-- Jest
-- Joi
-- Prettier
-- Eslint
+- [Typescript](https://www.typescriptlang.org/)
+- [Koa](https://github.com/koajs/koa)
+- [Jest](https://jestjs.io/)
+- [Joi](https://joi.dev/)
+- [Prettier](https://prettier.io/)
+- [Eslint](https://eslint.org/)
 
 ## Project structure
 
@@ -30,7 +30,7 @@ The structure allows the developer to split the code following the single-respon
 - `types`: folder for the types declaration in the project;
 - `validators`: this folder contains validators written in Joi and fungible as middleware.
 
-## How to start
+## Development commands
 
 If you use [nvm](https://github.com/nvm-sh/nvm), in order to use the right node version run:
 
@@ -70,10 +70,8 @@ npm test
 
 ### Build the application
 
-To build the service, run:
+To build the service, that will produce a `/build` folder as output, run:
 
 ```bash
 npm build
 ```
-
-A `/build` folder will be produced as output.
