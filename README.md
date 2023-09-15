@@ -10,6 +10,7 @@ service as it may like the most.
 
 The boilerplate contains the following technologies:
 
+- [NVM](https://github.com/nvm-sh/nvm)
 - [Typescript](https://www.typescriptlang.org/)
 - [Koa](https://github.com/koajs/koa)
 - [Jest](https://jestjs.io/)
