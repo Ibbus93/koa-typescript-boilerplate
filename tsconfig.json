@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["es6"],
@@ -9,19 +9,15 @@
     "noImplicitAny": true,
     "outDir": "build",
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
+      "~/*": ["./src/*"],
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "rootDir": ".",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2016",
-    "types": ["@types/jest"]
+    "target": "es2016"
   },
   "exclude": ["./build/."],
-  "include": ["./src/**/*"],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+  "include": ["./src/**/*"]
 }
